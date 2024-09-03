@@ -14,7 +14,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-image: url("images/Engineering\ Backgriund.jpg"); /* Replace with actual image URL */
+            background-image: url("images/Engineering\ Background.jpg"); /* Replace with actual image URL */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -50,7 +50,7 @@
 
         /* Container for the main content */
         .container {
-            padding-top: 120px; /* Increased spacing to ensure the navbar doesn't cover the content */
+            padding-top: 400px; /* Increased spacing to ensure the navbar doesn't cover the content */
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
@@ -67,7 +67,11 @@
             padding: 40px;
             text-align: center;
             font-size: 1.2rem;
+            position: relative;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .tile:hover {
@@ -76,10 +80,15 @@
             cursor: pointer;
         }
 
-        /* Link styling inside tile */
+        /* Make the entire tile clickable */
         .tile a {
-            color: white;
-            text-decoration: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            z-index: 1;
         }
 
         /* Additional media queries for responsiveness */
@@ -104,19 +113,58 @@
 
     <!-- Main content: Tile blocks -->
     <div class="container">
-        <div class="tile"><a href="principles-practices-project-management.html">Principles, Practices, Project Management (Web Design)</a></div>
-        <div class="tile"><a href="computer-aided-design.html">Computer Aided Design</a></div>
-        <div class="tile"><a href="computer-controlled-cutting.html">Computer Controlled Cutting</a></div>
-        <div class="tile"><a href="electronics-production.html">Electronics Production</a></div>
-        <div class="tile"><a href="3d-scanning-and-printing.html">3D Scanning and Printing</a></div>
-        <div class="tile"><a href="embedded-programming.html">Embedded Programming</a></div>
-        <div class="tile"><a href="electronics-design.html">Electronics Design</a></div>
-        <div class="tile"><a href="output-devices.html">Output Devices</a></div>
-        <div class="tile"><a href="mechanical-design.html">Mechanical Design</a></div>
-        <div class="tile"><a href="input-devices.html">Input Devices</a></div>
-        <div class="tile"><a href="molding-and-casting.html">Molding and Casting</a></div>
-        <div class="tile"><a href="networking-and-communications.html">Networking and Communications</a></div>
-        <div class="tile"><a href="interface-and-application-programming.html">Interface and Application Programming</a></div>
+        <div class="tile">
+            <a href="principles-practices-project-management.html"></a>
+            Principles, Practices, Project Management (Web Design)
+        </div>
+        <div class="tile">
+            <a href="computer-aided-design.html"></a>
+            Computer Aided Design
+        </div>
+        <div class="tile">
+            <a href="computer-controlled-cutting.html"></a>
+            Computer Controlled Cutting
+        </div>
+        <div class="tile">
+            <a href="electronics-production.html"></a>
+            Electronics Production
+        </div>
+        <div class="tile">
+            <a href="3d-scanning-and-printing.html"></a>
+            3D Scanning and Printing
+        </div>
+        <div class="tile">
+            <a href="embedded-programming.html"></a>
+            Embedded Programming
+        </div>
+        <div class="tile">
+            <a href="electronics-design.html"></a>
+            Electronics Design
+        </div>
+        <div class="tile">
+            <a href="output-devices.html"></a>
+            Output Devices
+        </div>
+        <div class="tile">
+            <a href="mechanical-design.html"></a>
+            Mechanical Design
+        </div>
+        <div class="tile">
+            <a href="input-devices.html"></a>
+            Input Devices
+        </div>
+        <div class="tile">
+            <a href="molding-and-casting.html"></a>
+            Molding and Casting
+        </div>
+        <div class="tile">
+            <a href="networking-and-communications.html"></a>
+            Networking and Communications
+        </div>
+        <div class="tile">
+            <a href="interface-and-application-programming.html"></a>
+            Interface and Application Programming
+        </div>
     </div>
 
 </body>
