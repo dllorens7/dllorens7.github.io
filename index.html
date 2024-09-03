@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Llorens's Portfolio</title>
+    <title>Engineering Portfolio</title>
+    <style>
+        /* Basic reset and font setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #00509e;
+        }
+
+        /* Container for the main content */
+        .container {
+            padding-top: 80px; /* Spacing for fixed navbar */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Tile block styles */
+        .tile {
+            background-color: #0080ff;
+            color: white;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .tile:hover {
+            background-color: #00509e;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        /* Link styling inside tile */
+        .tile a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <p>Hello World</p>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="final-project.html">Final Project</a>
+    </div>
+
+    <!-- Main content: Tile blocks -->
+    <div class="container">
+        <div class="tile"><a href="principles-practices-project-management.html">Principles, Practices, Project Management (Web Design)</a></div>
+        <div class="tile"><a href="computer-aided-design.html">Computer Aided Design</a></div>
+        <div class="tile"><a href="computer-controlled-cutting.html">Computer Controlled Cutting</a></div>
+        <div class="tile"><a href="electronics-production.html">Electronics Production</a></div>
+        <div class="tile"><a href="3d-scanning-and-printing.html">3D Scanning and Printing</a></div>
+        <div class="tile"><a href="embedded-programming.html">Embedded Programming</a></div>
+        <div class="tile"><a href="electronics-design.html">Electronics Design</a></div>
+        <div class="tile"><a href="output-devices.html">Output Devices</a></div>
+        <div class="tile"><a href="mechanical-design.html">Mechanical Design</a></div>
+        <div class="tile"><a href="input-devices.html">Input Devices</a></div>
+        <div class="tile"><a href="molding-and-casting.html">Molding and Casting</a></div>
+        <div class="tile"><a href="networking-and-communications.html">Networking and Communications</a></div>
+        <div class="tile"><a href="interface-and-application-programming.html">Interface and Application Programming</a></div>
+    </div>
+
 </body>
 </html>
