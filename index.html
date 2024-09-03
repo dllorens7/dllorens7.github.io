@@ -14,12 +14,16 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-image: url('https://www.example.com/engineering-background.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
         }
 
         /* Navigation bar styles */
         .navbar {
-            background-color: #003366;
+            background-color: rgba(0, 51, 102, 0.9); /* Semi-transparent background */
             color: white;
             padding: 15px;
             position: fixed;
@@ -46,7 +50,7 @@
 
         /* Container for the main content */
         .container {
-            padding-top: 80px; /* Spacing for fixed navbar */
+            padding-top: 120px; /* Increased spacing to ensure the navbar doesn't cover the content */
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
@@ -57,7 +61,7 @@
 
         /* Tile block styles */
         .tile {
-            background-color: #0080ff;
+            background-color: rgba(0, 128, 255, 0.9); /* Semi-transparent tile background */
             color: white;
             border-radius: 10px;
             padding: 40px;
@@ -76,6 +80,16 @@
         .tile a {
             color: white;
             text-decoration: none;
+        }
+
+        /* Additional media queries for responsiveness */
+        @media (max-width: 600px) {
+            .navbar {
+                font-size: 16px;
+            }
+            .tile {
+                padding: 30px;
+            }
         }
     </style>
 </head>
