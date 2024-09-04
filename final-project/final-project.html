@@ -4,34 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Basic reset and font setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 120px auto 50px auto; /* Adjusted margin to avoid navbar */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #00509e;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            margin-top: 30px;
+        }
+
+        .links a {
+            display: block;
+            font-size: 1.2rem;
+            color: #003366;
+            margin-bottom: 10px;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="final-project.html">Final Project</a></li>
-            </ul>
-        </nav>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="final-project.html">Final Project</a>
+    </div>
+
+    <!-- Main content: Final project section -->
+    <div class="container">
         <h1>Final Project</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Project Overview</h2>
-            <p>This is a placeholder for the final project details. The problem chosen is to create a smart home system that can automate various tasks around the house.</p>
-            <ul>
-                <li><a href="404.html">Component 2: Problem Validation</a></li>
-                <li><a href="404.html">Component 3: Solution Design</a></li>
-                <li><a href="404.html">Component 4: Prototyping and Testing</a></li>
-                <li><a href="404.html">Component 5: Project and Process Evaluation</a></li>
-                <li><a href="404.html">Component 6: Design Presentation</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 My Website</p>
-    </footer>
+
+        <!-- Problem Statement -->
+        <h2>Problem Statement</h2>
+        <p>
+            <!-- This is where you can write your problem statement -->
+            Each year, hundreds of vessels go missing in remote areas without access to communication or the internet. This lack of reliable information sources in critical situations can lead to an increase in the risk of loss of life and property due to longer rescue times.
+        </p>
+
+        <!-- Links to the components -->
+        <div class="links">
+            <h2>Project Components</h2>
+            <a href="component-2-problem-validation.html">Component 2: Problem Validation</a>
+            <a href="component-3-solution-design.html">Component 3: Solution Design</a>
+            <a href="component-4-prototyping-testing.html">Component 4: Prototyping and Testing</a>
+            <a href="component-5-project-process-evaluation.html">Component 5: Project and Process Evaluation</a>
+            <a href="component-6-design-presentation.html">Component 6: Design Presentation</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
