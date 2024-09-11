@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    /*<title>About Me</title> */
+    /* <title>About Me</title> */
     <style>
         /* Basic reset and font setup */
         * {
@@ -34,30 +34,42 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 100px;
         }
 
         .container {
             max-width: 1200px;
-            margin: 50px auto 50px auto; /* Adjusted margin to avoid navbar */
+            margin: 40px auto 50px auto; /* Increased top margin to create more space */
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
         }
 
-        .text-section {
-            flex: 1;
-            padding-left: 20px;
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
         }
 
         h1 {
             text-align: center;
             color: #003366;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+
+        /* Horizontal line style */
+        hr {
+            border: 0;
+            height: 4px;
+            background-color: #003366; /* Matches the "About Me" header color */
+            width: 90%; /* Adjusted to leave some space on the sides */
+            margin-bottom: 4px;
         }
 
         p {
@@ -65,6 +77,11 @@
             line-height: 1.6;
             color: #333;
             margin-bottom: 20px;
+        }
+
+        .text-section {
+            flex: 1;
+            padding-left: 20px;
         }
 
         .image-section {
@@ -88,34 +105,35 @@
         <a href="/final-project/final-project.html">Final Project</a>
     </div>
 
-    <!-- Main content: About me section -->
-     <div class="container">
-        <h1>About Me</h1>
-     </div>
+    <!-- Combined container -->
     <div class="container">
+        <h1>About Me</h1>
+        <hr> <!-- Horizontal line after the header -->
 
-        <!-- Image section on the left -->
-        <div class="image-section">
-            <!-- Insert your image here -->
-            <img src="images/AboutMePic.jpg">
-        </div>
+        <div class="content-section">
+            <!-- Image section on the left -->
+            <div class="image-section">
+                <img src="images/AboutMePic.jpg" alt="About Me Image">
+            </div>
 
-        <!-- Text section on the right -->
-        <div class="text-section">
-            <p>
-                Welcome to my portfolio! I’m Daniel Llorens, and I’m passionate about engineering, design, and technology. 
-                Over the years, I’ve developed a broad set of skills ranging from computer-aided design to embedded 
-                programming. My journey into engineering began with a deep fascination with how things work, and this curiosity 
-                continues to fuel my drive for innovation. On my free time, I enjoy rowing as part of my school's Varsity Crew 
-                team and being a leader through my board positions in some of my school's clubs, including the Computer Science
-                Club and the JustHumanity Club, whose mission is to advocate for those that are vulnerable and underrepresented.
-            </p>
-            <p>
-                Currently, I am also focused on mastering various engineering techniques and applying them to real-world 
-                projects. This portfolio showcases some of my key projects, skills, and the tools I’ve learned along 
-                the way. From 3D scanning and printing to electronics production, I thrive on challenging myself with 
-                diverse problems to solve.
-            </p>
+            <!-- Text section on the right -->
+            <div class="text-section">
+                <p>
+                    Welcome to my portfolio! I’m Daniel Llorens, and I’m passionate about engineering, design, and technology. 
+                    Over the years, I’ve developed a broad set of skills ranging from computer-aided design to embedded 
+                    programming. My journey into engineering began with a deep fascination with how things work, and this 
+                    curiosity continues to fuel my drive for innovation. On my free time, I enjoy rowing as part of my school's 
+                    Varsity Crew team and being a leader through my board positions in some of my school's clubs, including the 
+                    Computer Science Club and the JustHumanity Club, whose mission is to advocate for those that are vulnerable 
+                    and underrepresented.
+                </p>
+                <p>
+                    Currently, I am also focused on mastering various engineering techniques and applying them to real-world 
+                    projects. This portfolio showcases some of my key projects, skills, and the tools I’ve learned along 
+                    the way. From 3D scanning and printing to electronics production, I thrive on challenging myself with 
+                    diverse problems to solve.
+                </p>
+            </div>
         </div>
     </div>
 
