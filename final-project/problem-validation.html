@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component 2: Problem Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+        }
+
+        td p {
+            margin: 5px 0;
+        }
+
+        td a {
+            color: #003366;
+            text-decoration: none;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .source-title {
+            font-weight: bold;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Me</a>
+        <a href="final-project.html">Final Project</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Component 2: Problem Validation</h1>
+
+        <table>
+            <!-- Academic Research: Organizations -->
+            <tr>
+                <th colspan="2">Academic Research: Organizations</th>
+            </tr>
+            <tr>
+                <td>
+                    <p class="source-title">National Marine Electronics Association (NMEA)</p>
+                    <p>Contact: Mark Reedenauer (President & Executive Director of NMEA)</p>
+                    <p>Email: <a href="mailto:mreedenauer@nmea.org">mreedenauer@nmea.org</a></p>
+                    <p>Phone: (410) 975-9425</p>
+                </td>
+                <td>
+                    <p class="source-title">Society of Naval Architects and Marine Engineers (SNAME)</p>
+                    <p>Contact: Brian Forrestal (SNAME Senior Vice President, Technology & Research)</p>
+                    <p>Email: <a href="mailto:sname@sname.org">sname@sname.org</a></p>
+                </td>
+            </tr>
+
+            <!-- Market Research -->
+            <tr>
+                <th colspan="2">Market Research</th>
+            </tr>
+            <!-- Source 1 -->
+            <tr>
+                <td colspan="2">
+                    <p class="source-title"><a href="https://doi.org/10.1109/ICCMC51019.2021.9418287" target="_blank">Murthy, S. V. S. N., Satyanarayana, B. V. V., & Srinivas, CH. V. V. S. (2021). Location Tracking and Warning System of a Ship using Arduino. IEEE Xplore.</a></p>
+                    <p>This published paper discusses how the fatal rate of boat accidents has increased in recent years and how there is a need for implementation of better safety methods. It focuses mainly on boat GPS tracking. It also dives into other devices that could be attached to the boat to have more control over the motor in emergency situations. A large component of the system that they are proposing is the alert component of a possible device. This alert system would notify the captain and passengers of the boat as well as emergency services when the boat had an accident.</p>
+                    <p>This source is relevant to our project because not only does it confirm the need for such technological implementations on boats but it proposes similar functionality to what we are planning to do, as highlighted by the GPS/location and alerting ability of the proposed device.</p>
+                </td>
+            </tr>
+            <!-- Source 2 -->
+            <tr>
+                <td colspan="2">
+                    <p class="source-title"><a href="https://ieeexplore.ieee.org/abstract/document/6877371" target="_blank">Rogers, D. (n.d.). Preventing recreational boating fatalities and serious injuries with: The ANN System Enterprise. IEEE Xplore.</a></p>
+                    <p>This article makes an argument about how boating accidents and fatalities are prevalent and are very serious issues that are on the rise. It provides statistics and analytics to support their claim. Finally it proposes what they believe is the best solution: an ANN (Assistant Naval Navigator).</p>
+                    <p>This supports our case that the problem our project is intended to fix or be a solution to is valid. It does so through proven and cited evidence. It also ties into our solution with their own solution, as we intend to make navigation efficiency an element of major importance in our device.</p>
+                </td>
+            </tr>
+            <!-- Source 3 -->
+            <tr>
+                <td colspan="2">
+                    <p class="source-title"><a href="https://doi.org/10.47059/alinteri/V36I1/AJAS21068" target="_blank">Norzeli, A. N., et al. (2021). Automated rescuing boat tracking system using Raspberry Pi. Alınteri Journal of Agriculture Sciences.</a></p>
+                    <p>This source is an article that comments on the use of devices to help emergency services locate people who are in need of rescue and monitor them wirelessly. It also talks about the implementation of safety cameras, speed recorders, and other devices that could also be helpful in emergency situations. The rest of the article focuses on experiments and tests run to support their claims and puts particular focus on flooding in Malaysia.</p>
+                    <p>This article is special to our project because its solution is most similar to the device we had in mind. It proposes a small and compact computer for this situation. More specifically, a raspberry pi, which is what we had in mind.</p>
+                </td>
+            </tr>
+
+            <!-- Patent Research -->
+            <tr>
+                <th colspan="2">Patent Research</th>
+            </tr>
+            <!-- Source 1 -->
+            <tr>
+                <td colspan="2">
+                    <p class="source-title"><a href="https://patents.google.com/patent/US10691470B2/en" target="_blank">Woog, K., & Woog, T. (2016). Personal computer system with remotely-configured hardware-enforced usage limits.</a></p>
+                    <p>This patent details the components that make up a personal computer system and how they interact with each other to function correctly. It includes a motherboard, video graphics adapter, mod board, switching board and single board computer. It then goes into detail explaining how each of these parts would work and how they rely on each other to operate the computer.</p>
+                    <p>A design such as this one is a good starting point for our raspberry pi compact computer design. The design of this pc is also compact and it has many of the parts and functions that we were hoping to include in our device.</p>
+                </td>
+            </tr>
+            <!-- Source 2 -->
+            <tr>
+                <td colspan="2">
+                    <p class="source-title"><a href="https://patents.google.com/patent/US8510046B2/en" target="_blank">Kabel, D. W., et al. (2013). Marine vessel navigation device, system and method. U.S. Patent No. US8510046B2.</a></p>
+                    <p>This patent focuses on presenting systems and methods to display information and data on a chartplotter or other similar marine vessel navigational equipment. It displays multiple images of art designs for the screen of said navigation device or chartplotter. The marine electronic device for use in vessel navigation that they are working on is also made to have a memory and the ability for data processing.</p>
+                    <p>We intend to implement some kind of chartplotter display on the monitor of our compact pc, so learning from this patent and its display systems and methods will help us to create our own version of a navigation display. Additionally, its relevance to our personal computer is seen in the patent’s description of the electronic navigation device that they would use, as it has many attributes in common. These include but are not limited to a memory and data processing unit.</p>
+                </td>
+            </tr>
+            <!-- Source 3 -->
+            <tr>
+                <td colspan="2">
+                    <p class="source-title"><a href="https://patents.google.com/patent/WO2019143083A1/en" target="_blank">Kim, Y. D., et al. (2019). Ship collision avoidance system and method. World Intellectual Property Organization.</a></p>
+                    <p>This patent proposes a ship collision avoidance system. It uses WAVE communication technology, ship IDs, and a data receiving unit to detect other vessels in the area and process the data to avoid collisions. It also provides visual and audio alerts to the captain and other vessel crew members.</p>
+                    <p>This source is key to our project’s goal of preventing boat collisions. It helps to validate our project and provides us with useful information to implement in our boat detection system. It also supports the concept of implementing advanced communication systems on small vessels, which we are aiming to do with our system as well.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
