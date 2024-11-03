@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component 2: Problem Validation</title>
     <style>
+        /* Existing styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
-
+    
         .navbar {
             background-color: #003366;
             color: white;
@@ -23,13 +24,13 @@
             left: 0;
             z-index: 1000;
         }
-
+    
         .navbar a {
             color: white;
             text-decoration: none;
             margin: 0 100px;
         }
-
+    
         .container {
             max-width: 1200px;
             margin: 100px auto;
@@ -38,47 +39,54 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-
+    
         h1 {
             text-align: center;
             color: #003366;
             margin-bottom: 30px;
         }
-
+    
         table {
             width: 100%;
             border-collapse: collapse;
         }
-
+    
         th, td {
             border: 1px solid #ddd;
             padding: 12px;
             text-align: left;
         }
-
+    
         th {
             background-color: #003366;
             color: white;
         }
-
+    
         td p {
             margin: 5px 0;
         }
-
+    
         td a {
             color: #003366;
             text-decoration: none;
         }
-
+    
         td a:hover {
             text-decoration: underline;
         }
-
+    
         .source-title {
             font-weight: bold;
             color: #003366;
         }
-    </style>
+    
+        /* New style for the Project Requirements title */
+        .project-requirements-title {
+            font-size: 1.25em; /* Adjust size as needed */
+            color: #003366;
+            font-weight: bold;
+        }
+    </style>    
 </head>
 <body>
 
@@ -169,7 +177,43 @@
                     <p>This source is key to our project’s goal of preventing boat collisions. It helps to validate our project and provides us with useful information to implement in our boat detection system. It also supports the concept of implementing advanced communication systems on small vessels, which we are aiming to do with our system as well.</p>
                 </td>
             </tr>
-        </table>
+        <tr>
+            <th colspan="2">Project Requirements</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p class="source-title"> Battery Life </p>
+                <p> The device must be capable of delivering 24 hours of continuous use under a 25W power load, verified through endurance testing with real-world workloads. </p>
+                <br>
+                <p class="source-title"> Waterproofing </p>
+                <p> The exterior of the container must achieve an IP68 rating, ensuring it is dustproof and capable of being submerged in water up to 1 meter for 30 minutes without any water ingress.</p>
+                <br>
+                <p class="source-title"> Water-Resistant Internals </p>
+                <p> The internal components, including circuit boards, wiring, and connectors, must be coated with a conformal waterproof layer capable of withstanding splashes and exposure to high humidity (up to 90%) without damage.</p>
+                <br>
+                <p class="source-title"> Secondary Cursor Input </p>
+                <p> The secondary input device, such as a joystick or trackpad, must be responsive and functional, allowing the user to control the cursor within 1mm of precision and operate at a latency of less than 50ms.</p>
+                <br>
+                <p class="source-title"> Buoyancy </p>
+                <p> The container must float on water, maintaining at least 50% of its volume above the surface when fully loaded with components and batteries, verified through buoyancy tests in fresh and saltwater environments.</p>
+                <br>
+                <p class="source-title"> Secondary Battery Storage </p>
+                <p> The compartment for a secondary battery must be sized to fit a standardized lithium-ion battery pack with a capacity of at least 10,000 mAh, allowing for easy swapping without tools in less than 30 seconds.</p>
+                <br>
+                <p class="source-title"> SD Card Storage </p>
+                <p> The SD card compartment must be capable of securely holding a minimum of 5 standard-size SD cards, each in its own slot to prevent misplacement or damage during transport.</p>
+                <br>
+                <p class="source-title"> Retractable USB-C Cable </p>
+                <p> The retractable USB-C cable must extend to a minimum of 1 meter, support fast charging at 60W, and retract fully into the case without external loops or tangling.</p>
+                <br>
+                <p class="source-title"> Mechanical Keyboard </p>
+                <p> The full-size mechanical keyboard must have at least 84 keys, with a key switch rated for 50 million presses, ensuring it withstands heavy use. The keyboard must also be able to operate in temperatures ranging from -10°C to 50°C.</p>
+                <br>
+                <p class="source-title"> Audio Output </p>
+                <p> The built-in speakers must produce a minimum volume of 75 dB at 1 meter, with frequency response from 100Hz to 20kHz, ensuring clear audio playback in noisy outdoor conditions.</p>
+            </td>
+        </tr>
+        </table>        
     </div>
 
 </body>
