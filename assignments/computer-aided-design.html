@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Computer Aided Design </title>
+    <title>3D Scanning and Printing</title>
     <style>
         /* Basic reset and font setup */
         * {
@@ -39,22 +39,23 @@
 
         .container {
             max-width: 1200px;
-            margin: 120px auto 50px auto; /* Adjusted margin to avoid navbar */
+            margin: 70px auto 50px auto; /* Adjusted margin to avoid navbar */
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
 
+        /* Increased font size for <h1> */
         h1 {
             text-align: center;
             color: #003366;
             margin-bottom: 30px;
+            font-size: 2.5rem; /* Adjusted font size */
         }
 
         h2 {
-            color: #003366;
-            font-size: 1.8rem;
+            color: #00509e;
             margin-bottom: 20px;
         }
 
@@ -65,28 +66,35 @@
             margin-bottom: 20px;
         }
 
-        /* Style for step-by-step documentation */
-        .step {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .step:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        .step img {
-            width: 40%;
+        /* Layout 1: Image aligned left with text underneath */
+        .layout-1 img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 40%; /* Adjust as needed */
             border-radius: 10px;
-            margin: 0 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .step-text {
-            width: 55%;
-            font-size: 1.1rem;
-            line-height: 1.6;
+        /* Layout 2: Image centered */
+        .layout-2 img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 50%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 3: Two images side by side */
+        .layout-3 {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .layout-3 img {
+            width: 49%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -102,90 +110,101 @@
     <!-- Main content -->
     <div class="container">
         <h1>Computer Aided Design</h1>
-        <p>
-            <!-- This is where you can write the content for this specific page -->
-            This is a placeholder for the content related to the specific tile you selected from the home page.
-            Use this space to describe your project, process, or topic in detail.
-        </p>
-        <p>
-            You can also include more paragraphs, images, or other relevant content for this section.
-        </p>
-
-        <!-- Step-by-Step Documentation Template -->
         <h2>3D Final Project Product Design</h2>
 
-        <!-- Step 1 -->
-        <div class="step">
-            <img src="path/to/image1.jpg" alt="Step 1 Image">
-            <div class="step-text">
-                <h3>Step 1: Preparing the Model</h3>
-                <p>
-                    In this step, you will start by preparing the 3D model for scanning. Make sure the model is clean and positioned correctly on the scanning platform.
-                </p>
-            </div>
+        <p>
+            For this part of the Computer Aided Design assignment, 
+        </p>
+
+        <!-- Layout 3: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/3D CAD/Image 1.01.png" alt="Step 3 Image 1">
+            <img src="/images/3D CAD/Image 1.02.png" alt="Step 3 Image 2">
+        </div>
+        <p>
+            Making rough estimations, I first determined the dimensions that my 
+        </p>
+
+        <!-- Layout 2: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="/images/3D CAD/Image 1.02.png" alt="Step 2 Image">
+            <p>
+                Now, set up the 3D scanner and calibrate it according to the manufacturer's guidelines. Begin the scanning process, ensuring that all angles are captured accurately.
+                The text spans the width of the container and continues here, describing the process shown in the centered image.
+            </p>
         </div>
 
-        <!-- Step 2 -->
-        <div class="step">
-            <img src="path/to/image2.jpg" alt="Step 2 Image">
-            <div class="step-text">
-                <h3>Step 2: Scanning the Model</h3>
-                <p>
-                    Now, set up the 3D scanner and calibrate it according to the manufacturer's guidelines. Begin the scanning process, ensuring that all angles are captured accurately.
-                </p>
-            </div>
+        <!-- Layout 4: Three Images -->
+        <div class="layout-3">
+            <img src="/images/3D CAD/Image 1.03.png" alt="Step 3 Image 1">
+            <img src="/images/3D CAD/Image 1.04.png" alt="Step 3 Image 2">
+        </div>
+        <div class="layout-2">
+            <img src="/images/3D CAD/Image 1.02.png" alt="Step 2 Image">
+        </div>
+        <p>
+            Once the scan is complete, import the data into your 3D modeling software for processing. 
+            Clean up any noise in the data and refine the model's details. This text spans the width of the container, 
+            providing additional details for the images shown side by side.
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h2>2D Logo Design</h2>
+        <!-- Layout 1: Image aligned left with text underneath -->
+        <div class="layout-1">
+            <img src="a" alt="Step 1 Image">
+            <p>
+                In this step, you will start by preparing the 3D model for scanning. Make sure the model is clean and positioned correctly on the scanning platform.
+                This text spans the full width of the container, providing a detailed description for the image above.
+            </p>
         </div>
 
-        <!-- Step 3 -->
-        <div class="step">
-            <img src="path/to/image3.jpg" alt="Step 3 Image">
-            <div class="step-text">
-                <h3>Step 3: Processing the Scan Data</h3>
-                <p>
-                    Once the scan is complete, import the data into your 3D modeling software for processing. Clean up any noise in the data and refine the model's details.
-                </p>
-            </div>
+        <!-- Layout 2: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="b" alt="Step 2 Image">
+            <p>
+                Now, set up the 3D scanner and calibrate it according to the manufacturer's guidelines. Begin the scanning process, ensuring that all angles are captured accurately.
+                The text spans the width of the container and continues here, describing the process shown in the centered image.
+            </p>
         </div>
 
-        <!-- Add more steps as needed by repeating the structure above -->
+        <!-- Layout 3: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="c" alt="Step 3 Image 1">
+            <img src="d" alt="Step 3 Image 2">
+        </div>
+        <p>
+            Once the scan is complete, import the data into your 3D modeling software for processing. 
+            Clean up any noise in the data and refine the model's details. This text spans the width of the container, 
+            providing additional details for the images shown side by side.
+        </p>
+
+        <!-- Layout 4: Three Images -->
+        <div class="layout-3">
+            <img src="/images/3D CAD/Image 1.03.png" alt="Step 3 Image 1">
+            <img src="/images/3D CAD/Image 1.04.png" alt="Step 3 Image 2">
+        </div>
+        <div class="layout-2">
+            <img src="/images/3D CAD/Image 1.02.png" alt="Step 2 Image">
+        </div>
+        <p>
+            Once the scan is complete, import the data into your 3D modeling software for processing. 
+            Clean up any noise in the data and refine the model's details. This text spans the width of the container, 
+            providing additional details for the images shown side by side.
+        </p>
     </div>
-    <h2>2D Logo Design</h2>
-
-        <!-- Step 1 -->
-        <div class="step">
-            <img src="path/to/image1.jpg" alt="Step 1 Image">
-            <div class="step-text">
-                <h3>Step 1: Preparing the Model</h3>
-                <p>
-                    In this step, you will start by preparing the 3D model for scanning. Make sure the model is clean and positioned correctly on the scanning platform.
-                </p>
-            </div>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="step">
-            <img src="path/to/image2.jpg" alt="Step 2 Image">
-            <div class="step-text">
-                <h3>Step 2: Scanning the Model</h3>
-                <p>
-                    Now, set up the 3D scanner and calibrate it according to the manufacturer's guidelines. Begin the scanning process, ensuring that all angles are captured accurately.
-                </p>
-            </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="step">
-            <img src="path/to/image3.jpg" alt="Step 3 Image">
-            <div class="step-text">
-                <h3>Step 3: Processing the Scan Data</h3>
-                <p>
-                    Once the scan is complete, import the data into your 3D modeling software for processing. Clean up any noise in the data and refine the model's details.
-                </p>
-            </div>
-        </div>
-
-        <!-- Add more steps as needed by repeating the structure above -->
-    </div>
+</div>
 
 </body>
 </html>
