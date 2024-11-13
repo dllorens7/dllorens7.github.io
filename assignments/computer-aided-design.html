@@ -165,7 +165,13 @@
             <img src="/images/3D CAD/Image 1.08.png" alt="Image">
         </div>
         <p>
-            Now to start working on the hinges. As you can see in the first image, I created a construction plane with 
+            Now to start working on the hinges. As you can see in the first image, I created a construction plane using a face from the side of the 
+            original body as a reference and then offsetting it 10 mm into the body. I did this so that when I created a sketch on that construction
+            plane, I would be working at a depth where I wasn't affected by the rounded corners and so that when I later extruded the sketch, the
+            created hinge would be on the side of the body and not on its corner. For the sketch, I created a circle with a diameter of 19 mm and
+            its center exactly halfway between the two bodies. I then created a line tangent to that circle running accross and connecting the circle 
+            to the side of the body. I then extruded that whole sketch, sketched a smaller circle into the circular face of the extruded hinge, and 
+            created a smaller cylinder sticking out. I used the fillet tool to smooth out the end of the cylinder a little.
         </p>
         <br> <br> <br> <br>
 
