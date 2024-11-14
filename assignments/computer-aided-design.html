@@ -165,19 +165,64 @@
             <img src="/images/3D CAD/Image 1.08.png" alt="Image">
         </div>
         <p>
-            Now to start working on the hinges. As you can see in the first image, I created a construction plane using a face from the side of the 
+            Now to start working on the hinges, beginning with the first male hinge. As you can see in the first image, I created a construction plane using a face from the side of the 
             original body as a reference and then offsetting it 10 mm into the body. I did this so that when I created a sketch on that construction
             plane, I would be working at a depth where I wasn't affected by the rounded corners and so that when I later extruded the sketch, the
             created hinge would be on the side of the body and not on its corner. For the sketch, I created a circle with a diameter of 19 mm and
             its center exactly halfway between the two bodies. I then created a line tangent to that circle running accross and connecting the circle 
             to the side of the body. I then extruded that whole sketch, sketched a smaller circle into the circular face of the extruded hinge, and 
-            created a smaller cylinder sticking out. I used the fillet tool to smooth out the end of the cylinder a little.
+            created a smaller cylinder sticking out. I used the Fillet tool to smooth out the sides of the end of the cylinder.
         </p>
         <br> <br> <br> <br>
 
+        <!-- Layout 3: Three Images -->
+        <div class="layout-3">
+            <img src="/images/3D CAD/Image 1.09.png" alt="Image">
+            <img src="/images/3D CAD/Image 1.10.png" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="/images/3D CAD/Image 1.11.png" alt="Image">
+        </div>
+        <p>
+            I created a second (female) hinge connected to the second body that would be compatible with the first (male) hinge I created. I repeated the steps I 
+            already did for the male hinge, consisting of the sketch and an extrusion, making the sketch on a construction plane slightly offset 
+            from the face of the male hinge, as a way to create a small separation space between the two hinges. What I did different for the 
+            female hinge was that instead of creating the smaller cylinder sticking out like in the male hinge, I actually used the combine tool 
+            with a "cut" operation to use the small cylinder from the male hinge to cut a hole in the shape of the small cylinder inside the female 
+            hinge. To make it possible for the small cylinder to fit and rotate in the whole of the female hinge if we were to actually print this 
+            CAD design, I offset the face of the hole by 0.05 mm.
+        </p>
+        <br> <br> <br> <br>
 
+        <!-- Layout 3: Three Images -->
+        <div class="layout-3">
+            <img src="/images/3D CAD/Image 1.12.png" alt="Image">
+            <img src="/images/3D CAD/Image 1.13.png" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="/images/3D CAD/Image 1.14.png" alt="Image">
+        </div>
+        <p>
+            In preparation for mirroring over the hinges I already created to the other side of the bodies, I created a midplane halfway throughout
+            the second "case" body. However, I ran into the problem that for mirroring, I had to actually make the hinges and the cases different 
+            bodies. To do so, I had to split each of the two hinge-case bodies into two seperate bodies; one for the case and one for the hinge.
+            I had to get an outside face that would align well with where I wanted to make the cut to use as my splitting tool, so I creatively 
+            created a box on the side whose sole purpose was to have one of its faces be used as the cut tool. Then I used the midplane to mirror 
+            both the female and male hinge bodies.
+        </p>
+        <br> <br> <br> <br>
 
-
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/3D CAD/Image 1.15.png" alt="Image">
+            <img src="/images/3D CAD/Image 1.16.png" alt="Image">
+        </div>
+        <p>
+            Finally its finished! This design took me some time and I had to do quite a bit of research combined with my own creativity to solve 
+            some problems that arose, but now that it is completed I am really proud of it and am happy I devoted all those hours into it. Above 
+            are two views of the completed Cyberdeck case design.
+        </p>
+        <br> <br> <br> <br>
 
 
 
