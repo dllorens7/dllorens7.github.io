@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Scanning and Printing</title>
+    <style>
+        /* Basic reset and font setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 70px auto 50px auto; /* Adjusted margin to avoid navbar */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Increased font size for <h1> */
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+            font-size: 2.5rem; /* Adjusted font size */
+        }
+
+        h2 {
+            color: #00509e;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Layout 1: Image aligned left with text underneath */
+        .layout-1 img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 40%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 2: Image centered */
+        .layout-2 img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 50%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 3: Two images side by side */
+        .layout-3 {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .layout-3 img {
+            width: 49%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Me</a>
+        <a href="/final-project/final-project.html">Final Project</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Computer Controlled Cutting</h1>
+
+        <!-- OPTIONAL: Intro to Asignment (only if there are no subassignments)
+        <p>
+            [YAP]
+        </p>
+        -->
+
+        <!-- OPTIONAL (repeat h2 and intro to h2 as often as necessary for each subassignment) -->
+        <h2> Laser Cutting </h2>
+
+        <!-- OPTIONAL: Introduction for h2 (if there is a h2 (aka a subassignment))-->
+        <p>
+            For this laser cutting assignment the goal was to create a 3D fit together puzzle that could then be laser-cut into a wooden slab inside a 
+            Glowforge Pro laser cutter machine that we have in my school's STEAM center. Along the way I also learned about laser kerf, material choices, 
+            good fit, and other things. 
+        </p>
+        <br> <br> <br> <br>
+        
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="/images/Computer Controlled Cutting/Laser Cutting 1.png" alt="Image">
+            <p>
+                I decided to create my design that was going to be cut in Fusion, as I am very familiar with the program. Due to the limited size of the wooden slab that I was going to cut my design out of, I had to ensure that the dimensions of my design 
+                wouldn't exceed it, or else part of the design simply wouldn't be cut later on when I go to cut it. Thus, I made some measurements of 
+                the slab and determined that as a safeguard I should make my design fit into a square of sides 160 mm in length. Using the construction
+                lines in Fusion I created such a square.
+            </p>
+            <br> <br> <br> <br>
+        </div>
+
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Computer Controlled Cutting/Laser Cutting 2.png" alt="Image">
+            <img src="/images/Computer Controlled Cutting/Laser Cutting 3.png" alt="Image">
+        </div>
+        <p>
+            With my dimension constraints set up, I got straight to work on a design that I had already envisioned in my head. The idea was for the laser cutter to cut anywhere where there is a line in my design. I created a design with 
+            three main pieces that interlocked together to create a perfect square after a series of movements. This might be hard to understand, and 
+            it is hard to explain in detail, so just stay with me until the end were I will show what I mean through a video. Above you see the first
+            attempt at the finsished design. On the left is the complete design, and on the left is the same thing, except that the rectangles that are to 
+            be removed for the puzzle to work properly are highlighted and traced around in red. I made two mistakes here. The first is that for the  
+        </p>
+        <br> <br> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- SAMPLE CONTENT LAYOUTS -->
+
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="b" alt="Image">
+            <p>
+                [IN PROGRESS]
+            </p>
+            <br> <br> <br> <br>
+        </div>
+
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="c" alt="Image">
+            <img src="d" alt="Image">
+        </div>
+        <p>
+            [IN PROGRESS]
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 3: Three Images -->
+        <div class="layout-3">
+            <img src="a" alt="Image">
+            <img src="a" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="a" alt="Image">
+        </div>
+        <p>
+            [IN PROGRESS]
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 4: Four images (two on top of two) with full-width text -->
+        <div class="layout-3">
+            <img src="a" alt="Image">
+            <img src="a" alt="Image">
+        </div>
+        <div class="layout-3">
+            <img src="a" alt="Image">
+            <img src="a" alt="Image">
+        </div>
+        <p>
+            [IN PROGRESS]
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 5: Image aligned left with text underneath -->
+        <div class="layout-1">
+            <img src="a" alt="Image">
+            <p>
+                [IN PROGRESS]
+            </p>
+            <br> <br> <br> <br>
+        </div>
+    </div>
+
+</body>
+</html>
