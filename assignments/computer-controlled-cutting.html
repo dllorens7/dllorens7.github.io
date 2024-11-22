@@ -69,8 +69,8 @@
         /* Layout 1: Image aligned left with text underneath */
         .layout-1 img {
             display: block;
-            margin: 0 auto 20px auto;
-            width: 40%; /* Adjust as needed */
+            margin: 0 20px;
+            width: 50%; /* Adjust as needed */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -98,7 +98,7 @@
         }
         
         /* Embedded container styles */
-        .embedded-container {
+        .embedded-video {
             width: 600px; /* Matches the image width from previous layouts */
             height: 400px; /* Matches the image height */
             margin: 20px auto; /* Center the container with some spacing */
@@ -107,7 +107,24 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
             overflow: hidden; /* Ensures content fits within the container */
         }
-        .embedded-container iframe {
+
+        .embedded-docs {
+            width: 1100px; /* Matches the image width from previous layouts */
+            height: 1200px; /* Matches the image height */
+            margin: 20px auto; /* Center the container with some spacing */
+            border: 2px solid #ccc; /* Optional border for visual clarity */
+            border-radius: 10px; /* Rounded edges for a polished look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+            overflow: hidden; /* Ensures content fits within the container */
+        }
+
+        .embedded-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+
+        .embedded-docs iframe {
             width: 100%;
             height: 100%;
             border: none; /* Remove default iframe border */
@@ -223,12 +240,18 @@
         </p>
         <br> <br> <br> <br>
         -->
-        <!--
-        <div class="embedded-container">
-            <iframe src="https://docs.google.com/document/d/1I-TzkS1C3JH4R7paZkaGU0BQr4UZRF6YbGv__ne_Qfo/edit?tab=t.0" title="Embedded Content"></iframe>
-        </div> 
-        -->
-               
+        <!-- Layout 6: Image + Embedd (you can switch which one goes on the right and which one on the left by switching the order) -->
+        <div class="layout-3">
+            <img src="/images/Computer Controlled Cutting/IMG_1506.jpg" alt="Image">
+            <div class="embedded-video">
+                <iframe src="https://www.youtube.com/embed/PKOHx_zZUK4" title="Embedded Content"></iframe>
+            </div> 
+        </div>
+            <p>
+                THIS IS A TEST
+            </p>
+        <br> <br> <br> <br>
+        
         
         <!--
         <div class="video-container">
