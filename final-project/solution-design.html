@@ -128,6 +128,40 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        
+        /* Embedded container styles */
+        .embedded-video {
+            width: 600px; /* Matches the image width from previous layouts */
+            height: 400px; /* Matches the image height */
+            margin: 20px auto; /* Center the container with some spacing */
+            border: 2px solid #ccc; /* Optional border for visual clarity */
+            border-radius: 10px; /* Rounded edges for a polished look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+            overflow: hidden; /* Ensures content fits within the container */
+        }
+
+        .embedded-docs {
+            width: 1100px; /* Matches the image width from previous layouts */
+            height: 1200px; /* Matches the image height */
+            margin: 20px auto; /* Center the container with some spacing */
+            border: 2px solid #ccc; /* Optional border for visual clarity */
+            border-radius: 10px; /* Rounded edges for a polished look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+            overflow: hidden; /* Ensures content fits within the container */
+        }
+
+        .embedded-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+
+        .embedded-docs iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+        
     </style>    
 </head>
 <body>
@@ -280,6 +314,7 @@
             with the Compact Build, we might try developing the larger version of the Cyberdeck as a way
             to introduce more product variation and options for consumers.
         </p>
+        <br> <br> <br>
 
 
 
@@ -303,90 +338,73 @@
 
         <p class="source-title"> Day 2 &nbsp; (11 / 12 / 24) </p>
 
-        We tested out the monitor by connecting it to a laptop with an HDMI cable and were able to not only 
-        mirror the laptop’s screen but also control it thanks to the monitor’s touch screen features.
- 
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="/images/Daily Updates/IMG_1424.jpg" alt="Image">
+            <p>
+                We tested out the monitor by connecting it to a laptop with an HDMI cable and were able to not only 
+                mirror the laptop’s screen but also control it thanks to the monitor’s touch screen features.
+            </p>
+            <br> <br>
+        </div>
+        
         <p class="source-title"> Day 3 &nbsp; (11 / 14 / 24) </p>
         
-        a
+        Today we did some research on the different ways we could power the Cyberdeck. We figured we should go with 
+        some type of battery. We luckily had some batteries around the place, so we used those to start to visualize 
+        and estimate what size parameters we would probably be limited to and what size of battery we should order 
+        (if we even have to order any).
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="/images/Daily Updates/Batteries.jpg" alt="Image">
+            <br> <br>
+        </div>
 
         <p class="source-title"> Day 4 &nbsp; (11 / 18 / 24) </p>
 
-        a
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <p>
+                This class we focused on how we were going to make the Cyberdeck's case. We all had developed various designs 
+                for it through CAD modeling already, so we figured we should choose the best one, make any necessary adjustments,
+                and then just 3D-print it. The image below shows the 3D Printer that we will likely be using.
+            </p>
+            <img src="/images/Daily Updates/IMG_0165.jpg" alt="Image">
+            <br> <br>
+        </div>
 
         <p class="source-title"> Day 5 &nbsp; (11 / 20 / 24) </p>
 
-        I was absent
+        I was absent.
+
+        <br><br><br>
 
         <p class="source-title"> Day 6 &nbsp; (11 / 22 / 24) </p>
 
-        a
+        I learned how to embed videos and documents into my website, which will be very useful especially for embedding the PDR (Preliminary Design Review) into 
+        this "Component 3: Solution Design" page as a live, working document (see below past the Daily Updates). I also got started on the Introduction section of the PDR.
 
         <p class="source-title"> Day 7 &nbsp; (12 / a / 24) </p>
 
+        <br><br>
+
         <p class="source-title"> Day 8 &nbsp; (12 / a / 24) </p>
 
-        <p class="source-title"> Day 9 &nbsp; (12 / a / 24) </p>
+        <br><br>
 
         <p class="source-title"> Day 9 &nbsp; (12 / a / 24) </p>
-    </div>
 
-    <!-- CONTENT LAYOUTS -->
+        <br><br>
 
-        <!-- Layout 1: Image centered with full-width text -->
-        <div class="layout-2">
-            <img src="b" alt="Image">
-            <p>
-                [IN PROGRESS]
-            </p>
-            <br> <br> <br> <br>
+        <p class="source-title"> Day 10 &nbsp; (12 / a / 24) </p>
+
+        <br><br>
+
+        <div class="embedded-docs">
+            <iframe src="https://docs.google.com/document/d/1I-TzkS1C3JH4R7paZkaGU0BQr4UZRF6YbGv__ne_Qfo/edit?tab=t.0" 
+            title="Embedded Content" allowfullscreen="true"></iframe>
         </div>
-
-        <!-- Layout 2: Two images side by side with full-width text -->
-        <div class="layout-3">
-            <img src="c" alt="Image">
-            <img src="d" alt="Image">
-        </div>
-        <p>
-            [IN PROGRESS]
-        </p>
         <br> <br> <br> <br>
-
-        <!-- Layout 3: Three Images -->
-        <div class="layout-3">
-            <img src="a" alt="Image">
-            <img src="a" alt="Image">
-        </div>
-        <div class="layout-2">
-            <img src="a" alt="Image">
-        </div>
-        <p>
-            [IN PROGRESS]
-        </p>
-        <br> <br> <br> <br>
-
-        <!-- Layout 4: Four images (two on top of two) with full-width text -->
-        <div class="layout-3">
-            <img src="a" alt="Image">
-            <img src="a" alt="Image">
-        </div>
-        <div class="layout-3">
-            <img src="a" alt="Image">
-            <img src="a" alt="Image">
-        </div>
-        <p>
-            [IN PROGRESS]
-        </p>
-        <br> <br> <br> <br>
-
-        <!-- Layout 5: Image aligned left with text underneath -->
-        <div class="layout-1">
-            <img src="a" alt="Image">
-            <p>
-                [IN PROGRESS]
-            </p>
-            <br> <br> <br> <br>
-        </div>
     </div>
 </body>
 </html>
