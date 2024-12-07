@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Design</title>
+    <style>
+        /* Basic reset and font setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 120px auto 50px auto; /* Adjusted margin to avoid navbar */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Layout 1: Image aligned left with text underneath */
+        .layout-1 img {
+            display: block;
+            margin: 0 20px;
+            width: 40%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 2: Image centered */
+        .layout-2 img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 50%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 3: Two images side by side */
+        .layout-3 {
+            display: flex;
+            justify-content: space-between; /* Adjust spacing */
+            align-items: center;            /* Align items vertically */
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .layout-3 img {
+            width: 49%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 4: Three images side by side */
+        .layout-4 {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .layout-4 img {
+            width: 32.2%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        /* Embedded container styles */
+        .embedded-video {
+            width: 600px; /* Matches the image width from previous layouts */
+            height: 400px; /* Matches the image height */
+            margin: 20px auto; /* Center the container with some spacing */
+            border: 2px solid #ccc; /* Optional border for visual clarity */
+            border-radius: 10px; /* Rounded edges for a polished look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+            overflow: hidden; /* Ensures content fits within the container */
+        }
+
+        .embedded-docs {
+            width: 1100px; /* Matches the image width from previous layouts */
+            height: 1200px; /* Matches the image height */
+            margin: 20px auto; /* Center the container with some spacing */
+            border: 2px solid #ccc; /* Optional border for visual clarity */
+            border-radius: 10px; /* Rounded edges for a polished look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+            overflow: hidden; /* Ensures content fits within the container */
+        }
+
+        .embedded-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+
+        .embedded-docs iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Me</a>
+        <a href="final-project/final-project.html">Final Project</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1> Electronics Design </h1>
+
+        <!-- OPTIONAL: Intro to Asignment -->
+        <p>
+            This project consisted of using an electronics computer aided design software called KiCAD to create a circuit that can take a power source 
+            and run an output component (LED, MOTOR, etc). Our teacher first walked us through the program and taught us the basics of how to use it. 
+            Then he gave us the assignment, which was to design a circuit with a battery, an LED, a button, and a resistor.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Electronics Design/Schematics 1.png" alt="Image">
+            <img src="/images/Electronics Design/Schematics 2.png" alt="Image">
+        </div>
+        <p>
+            I started with getting some components and then importing them into the schematic editor as "symbols". This included a single-cell battery,
+            a resistor, and an LED. I linked these three symbols with green "wires". As I was doing this, I ran the "Electrical Rules Checker" test to 
+            ensure there were no problems with my design.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="/images/Electronics Design/Schematics 3.png" alt="Image">
+            <p>
+                I then added another LED, another resistor, and two button switches.
+            </p>
+            <br> <br> <br> <br>
+        </div>
+
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Electronics Design/Footprints 1.png" alt="Image">
+            <img src="/images/Electronics Design/Footprints 2.png" alt="Image">
+        </div>
+        <p>
+            To actually move into creating my circuit board in my PCB editor, I had to link these symbols I had added unto my schmeatic editor to real world 
+            parts. This required me to create footprints for each of the parts. Using a list of real world parts that the teacher gave us and that correpsonded 
+            to each type of part, I added these footprints. I first had to add teh symbols and then look up the name to add the footprint, as you can see I am 
+            doing with the resistor in the pictures above.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="/images/Electronics Design/Footprints 3.png" alt="Image">
+            <p>
+                After I had added all the necessary footprints, I could move on into the PCB editor.
+            </p>
+            <br> <br> <br> <br>
+        </div>
+
+        <!-- Layout 3: Three Images -->
+        <div class="layout-3">
+            <img src="/images/Electronics Design/PCB 1.png" alt="Image">
+            <img src="/images/Electronics Design/PCB 2.png" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="/images/Electronics Design/PCB 3.png" alt="Image">
+        </div>
+        <p>
+            The amount of parts I had planned to use in my design was going to be too much in the case that I actually made a model of my ciruit 
+            board in real life (my STEAM center doesn't have the resources to provide that many parts to all the students in my class), so I ended 
+            up settling for the basics: a battery, an LED, and a button switch. Above, in the first picture, you see the parts after I opened up 
+            the PCB editor. I then organized the parts in a way to efficiently connect them with wires. The next step was actually adding the 
+            wires and creating a box around the circuits.
+        </p>
+        <br> <br> <br> <br>
+        
+        <!-- Layout 1: Image centered with full-width text -->
+        <div class="layout-2">
+            <img src="/images/Electronics Design/PCB 4.png" alt="Image">
+            <p>
+                The final touches were to increase the thickness of the wire and insert the text "DANIEL'S CIRCUIT" in the top left of the circuit.
+            </p>
+            <br> <br> <br> <br>
+        </div>
+    </div>
+</body>
+</html>
