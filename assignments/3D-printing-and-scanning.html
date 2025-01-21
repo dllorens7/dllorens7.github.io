@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>3D Printing and Scanning</title>
     <style>
-        /* Basic reset and font setup */
-        * {
+         /* Basic reset and font setup */
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -39,7 +39,7 @@
 
         .container {
             max-width: 1200px;
-            margin: 120px auto 50px auto; /* Adjusted margin to avoid navbar */
+            margin: 70px auto 50px auto; /* Adjusted margin to avoid navbar */
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,6 +50,12 @@
             text-align: center;
             color: #003366;
             margin-bottom: 30px;
+            font-size: 2.5rem; /* Adjusted font size */
+        }
+
+        h2 {
+            color: #00509e;
+            margin-bottom: 20px;
         }
 
         p {
@@ -106,8 +112,8 @@
 
         /* Embedded container styles */
         .embedded-video {
-            width: 600px; /* Matches the image width from previous layouts */
-            height: 400px; /* Matches the image height */
+            width: auto /* Matches the image width from previous layouts */
+            height: auto /* Matches the image height */
             margin: 20px auto; /* Center the container with some spacing */
             border: 2px solid #ccc; /* Optional border for visual clarity */
             border-radius: 10px; /* Rounded edges for a polished look */
@@ -150,15 +156,84 @@
 
     <!-- Main content -->
     <div class="container">
-        <h1> [TILE NAME] Ex: Computer Aided Design </h1>
-
-        <!-- OPTIONAL: Intro to Asignment -->
-        <p>
-            [YAP]
-        </p>
+        <h1> 3D Printing and Scanning </h1>
 
         <!-- OPTIONAL (repeat h2 and intro to h2 as often as necessary for each subassignment) -->
-        <h2> [SUBASSIGNMENT] Ex: 3D Final Project Product Case Design</h2>
+        <h2> 3D Printing </h2>
+
+        <!-- OPTIONAL: Introduction for h2 (if there is a h2 (aka a subassignment))-->
+        <p>
+            3D Printing is the first part of this assignment. The goal here is to create and 3D print an object that demonstrates the unique capabilities of 
+            additive manufacturing. Some project constraints are the design's size (a few cubic centimeters maximum) and that the design must be impossible 
+            or impractical to create through subtractive manufacturing. I used Fusion to create my design because it is the CAD software I am best at.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 3: Three Images -->
+        <div class="layout-3">
+            <img src="/images/3D Printing and Scanning/3DPS 1.png" alt="Image">
+            <img src="/images/3D Printing and Scanning/3DPS 2.png" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="/images/3D Printing and Scanning/3DPS 3.png" alt="Image">
+        </div>
+        <p>
+            The first thing I did was create a construction-type sketch in the form of a square on the ground to set my constraints for the length and width of my 
+            design. Since I was going to create a cube box as my base to work around (meaning I won't go beyond the bounds of the cube in my design), the box's length and width were going to be less than the length and width 
+            of the square construction-type sketch. Moreover, the length, width, and height of a cube are all equal, and the length, width, and height constraints 
+            for the assignment are all equal too. Thus, by creating this cube, I was also ensuring that I wouldn't exceed the height constraints given to me. I
+            then made 3 equal, square sketches on sides of the cube in each of the 3 planes (x, y, z). All of these squares were centered on the sides' centers.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 3: Three Images -->
+        <div class="layout-3">
+            <img src="/images/3D Printing and Scanning/3DPS 4.png" alt="Image">
+            <img src="/images/3D Printing and Scanning/3DPS 5.png" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="/images/3D Printing and Scanning/3DPS 6.png" alt="Image">
+        </div>
+        <p>
+            Next I did a cutting extrude on each of the sketches on the sides of the cube, all going completely through the cube.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/3D Printing and Scanning/3DPS 7.png" alt="Image">
+            <img src="/images/3D Printing and Scanning/3DPS 7.5.png" alt="Image">
+        </div>
+        <p>
+            To give my design a more sleek aesthetic look, I used the Fillet tool to round out all the edges of the cube. I started with the top 16 edges. As you 
+            can see above, I selected them one by one and then did the operation. The result of that is seen in the second image. I then did the same for all 
+            other edges. I later realized that I could've saved myself a bit of time by using the multiselect tool where you drag a box over the entire design and it selects 
+            all the edges.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 5: Four images (two on top of two) with full-width text -->
+        <div class="layout-3">
+            <img src="/images/3D Printing and Scanning/3DPS 8.png" alt="Image">
+            <img src="/images/3D Printing and Scanning/3DPS 9.png" alt="Image">
+        </div>
+        <div class="layout-3">
+            <img src="/images/3D Printing and Scanning/3DPS 10.png" alt="Image">
+            <img src="/images/3D Printing and Scanning/3DPS 11.png" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="b" alt="Image">
+        </div>
+        <p>
+            I then created a new construction plane and elevated it so that it stood halfway up the height of the cube. I specifically placed it at the midpoint of the height 
+            to complement the two-way extrusion that I was going to do. I then sketched two centers each with a diameter of 3 mm and placed directly on the x-axis and at the midpoint between 
+            the two ends of the structural cylinders parallel to each other (see the bottom two images). Finally,  
+        </p>
+        <br> <br> <br> <br>
+
+        
+        <!-- OPTIONAL (repeat h2 and intro to h2 as often as necessary for each subassignment) -->
+        <h2> 3D Scanning </h2>
 
         <!-- OPTIONAL: Introduction for h2 (if there is a h2 (aka a subassignment))-->
         <p>
@@ -170,8 +245,6 @@
         
         
         
-        
-        
         <!-- CONTENT LAYOUTS -->
 
         <!-- Layout 1: Image centered with full-width text -->
@@ -180,8 +253,8 @@
             <p>
                 [IN PROGRESS]
             </p>
-            <br> <br> <br> <br>
         </div>
+        <br> <br> <br> <br>
 
         <!-- Layout 2: Two images side by side with full-width text -->
         <div class="layout-3">
@@ -206,7 +279,18 @@
         </p>
         <br> <br> <br> <br>
 
-        <!-- Layout 4: Four images (two on top of two) with full-width text -->
+        <!-- Layout 4: Three images side by side --> 
+        <div class="layout-4">
+            <img src="a" alt="Image">
+            <img src="a" alt="Image">
+            <img src="a" alt="Image">
+        </div>
+        <p>
+            [IN PROGRESS]
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 5: Four images (two on top of two) with full-width text -->
         <div class="layout-3">
             <img src="a" alt="Image">
             <img src="a" alt="Image">
@@ -220,7 +304,7 @@
         </p>
         <br> <br> <br> <br>
 
-        <!-- Layout 5: Image aligned left with text underneath -->
+        <!-- Layout 6: Image aligned left with text underneath -->
         <div class="layout-1">
             <img src="a" alt="Image">
             <p>
@@ -229,15 +313,14 @@
             <br> <br> <br> <br>
         </div>
 
-        <!-- Layout 6: Image + Embedd Docs (you can switch which one goes on the right and which one 
+        <!-- Layout 7: Image + Embedd Docs (you can switch which one goes on the right and which one 
          on the left by switching the order) -->
         <div class="layout-3">
-            <img src="/images/Computer Controlled Cutting/IMG_1506.jpg" alt="Image">
-            <div class="embedded-video">
-                <iframe src="https://www.youtube.com/embed/PKOHx_zZUK4" title="Embedded Content" allowfullscreen="true"></iframe>
+            <img src="image" alt="Image">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Embedded Content" allowfullscreen="true"></iframe>
                 <!-- when putting in the link after "src", use formula "https://www.youtube.com/embed/VIDEO_ID", not just 
                  the direct link -->
-            </div> 
+            <!-- <div class="embedded-video"> </div> -->
         </div>
             <p>
                 [IN PROGRESS]
