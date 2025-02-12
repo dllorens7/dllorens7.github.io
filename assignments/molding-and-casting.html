@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molding and Casting</title>
+    <style>
+        /* Basic reset and font setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 70px auto 50px auto; /* Adjusted margin to avoid navbar */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+            font-size: 2.5rem; /* Adjusted font size */
+        }
+
+        h2 {
+            color: #00509e;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Layout 1: Image aligned left with text underneath */
+        .layout-1 img {
+            display: block;
+            margin: 0 20px;
+            width: 40%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 2: Image centered */
+        .layout-2 img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 50%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 3: Two images side by side */
+        .layout-3 {
+            display: flex;
+            justify-content: space-between; /* Adjust spacing */
+            align-items: center;            /* Align items vertically */
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .layout-3 img {
+            width: 49%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout 4: Three images side by side */
+        .layout-4 {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .layout-4 img {
+            width: 32.2%; /* Adjust as needed */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        /* Embedded container styles */
+        .embedded-video {
+            width: 600px; /* Matches the image width from previous layouts */
+            height: 400px; /* Matches the image height */
+            margin: 20px auto; /* Center the container with some spacing */
+            border: 2px solid #ccc; /* Optional border for visual clarity */
+            border-radius: 10px; /* Rounded edges for a polished look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+            overflow: hidden; /* Ensures content fits within the container */
+        }
+
+        .embedded-docs {
+            width: 1100px; /* Matches the image width from previous layouts */
+            height: 1200px; /* Matches the image height */
+            margin: 20px auto; /* Center the container with some spacing */
+            border: 2px solid #ccc; /* Optional border for visual clarity */
+            border-radius: 10px; /* Rounded edges for a polished look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+            overflow: hidden; /* Ensures content fits within the container */
+        }
+
+        .embedded-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+
+        .embedded-docs iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Me</a>
+        <a href="/final-project/final-project.html">Final Project</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1> Molding and Casting </h1>
+
+        <!-- OPTIONAL: Intro to Asignment -->
+        <p>
+            In this assignment, I will be creating an open-back mold of an object I select and then making a cast out of that 
+            mold. Each mold must have a total volume of less than 3 in³ to manage material costs.
+            For my safety, I will put on latex gloves any time that I am working with the molding and casting, to prevent 
+            contamination with the liquid forms of the silicone and the resin, respectively.
+        </p>
+        <br> <br> <br> <br>
+        
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_1.png" alt="Image">
+            <img src="/images/Mold/Mold_2.png" alt="Image">
+        </div>
+        <p>
+            The first thing I had to figure out was what object I was going to use for the mold to take the shape of. We were allowed
+            to use an object we already had or make one ourselves. I decided to go on the website "thingiverse.com" that is full of
+            free, accessible designs that can be 3D printed, find a design I liked, and then 3D print it to use it as my object. I found this really cool 
+            shuriken design and chose it, downloading the .stl file and sending it to be printed. One important thing to keep in mind is 
+            that I had to make sure the scale of the shuriken was small enough so that when I poured the silicone for the mold, I could 
+            ensure that I comlplied with the project's 3 in³ volume constraint on the mold. Fortunately, the fact that the shuriken was pretty 
+            thin reduced its volume and helped with this issue.
+        </p>
+        <br> <br> <br> <br>
+        
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_3.jpg" alt="Image">
+            <img src="/images/Mold/Mold_4.jpg" alt="Image">
+        </div>
+        <p>
+            This is how the printed shuriken looks like from both sides. Note that it is flat on one side, which I consider to be the underside. 
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 3: Three Images -->
+        <div class="layout-2">
+            <img src="/images/Mold/Mold_5.JPG" alt="Image">
+        </div>
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_6.jpg" alt="Image">
+            <img src="/images/Mold/Mold_7.jpg" alt="Image">
+        </div>
+        <p>
+            The next step was to create the makeshift box that I was going to pour my mold into. I placed the shuriken on top of the dark, hard 
+            foam material I was going to cut out of to make my box and then made a rough estimation of the length and width that I was gonna need for at 
+            least the side of the box that the shuriken was going to be placed in. I made it large enough so that the shuriken would fit with some
+            spare space around it (see the image found a couple of stages below). I used a box-cutter to cut out the five different sides I was going to put together (not 6 because the top of the box is open), 
+            and used a ruler throughout the cutting process to stay consistent with the dimensions of the original side (the bottom of the box). Above you see how the finished box looks as seen from two different angles.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_8.jpg" alt="Image">
+            <img src="/images/Mold/Mold_9.JPG" alt="Image">
+        </div>
+        <p>
+            To create the finished box that I just showed, I had to glue the hard foam squares to each other using a hot glue gun. 
+            Although I had finished gluing together the box and it held together well, I noticed that other classmates who were ahead 
+            of me in the project had had a lot of leakage of the silicone liquid through the cracks in their boxes. Some had had to 
+            restart from scratch. In light of this, I decided to invest more time into adding more hot glue to cracks and open areas in 
+            between the sides of my box and making sure everything was completely closed up.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 3: Three Images -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_10.jpg" alt="Image">
+            <img src="/images/Mold/Mold_11.jpg" alt="Image">
+        </div>
+        <div class="layout-2">
+            <img src="/images/Mold/Mold_12.jpg" alt="Image">
+        </div>
+        <p>
+            Now I put the gloves on. To make the final liquid for the mold, I had to combine equal amounts of the two different silicone liquids (Part A and Part B), each coming from a different container.
+            Part A looks almost transparent, while Part B is a dark blue. I used plastic measuring cups to ensure I was using the correct amount of each type of silicone (roughly 105 mL each). As you can see, since I was 
+            planning on pouring the blue silicone unto the cup with the transparent silicone, I poured a little more than 105 mL into the blue silicone cup to adjust for the fact that some of the liquid stays 
+            in the original cup and thus is lost in the transfer from the blue silicone cup to the transparent silicone cup. I got the 105 mL volume measurement for each cup by estiating the amount I was going to need and consulting my teacher to make sure it was a valid amount. 
+            Finally, I used a large popsicle to drag out as much residue as I could from what was still in the blue silicone cup and then used the popsicle stick to mix the two silicone types. The last picture shows the transparent silicone cup holding the two types of silicone 
+            after they had already been mixed together.
+        </p>
+        <br> <br> <br> <br>
+        
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_13.jpg" alt="Image">
+            <img src="/images/Mold/Mold_14.jpg" alt="Image">
+        </div>
+        <p>
+            Before I poured the final silicone solution into my box, I had to firmly place my object inside the box. I decided to hot glue the shuriken to the bottom of the box, and then poured in the silicone. 
+            I placed some paper towels under the box to take in any silicone that ight leak from the box, just in case. Now I just had to wait for the silicone to dry and harden.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 4: Three images side by side --> 
+        <div class="layout-4">
+            <img src="/images/Mold/Mold_15.jpg" alt="Image">
+            <img src="/images/Mold/Mold_16.jpg" alt="Image">
+            <img src="/images/Mold/Mold_17.jpg" alt="Image">
+        </div>
+        <p>
+            When the mold had dried up and hardened, it was ready to be taken out of the box. I peeled away the 4 faces of the box on the sides until only the bottom of the box remained. I removed the bottom side more carefully.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 4: Three images side by side --> 
+        <div class="layout-4">
+            <img src="/images/Mold/Mold_18.jpg" alt="Image">
+            <img src="/images/Mold/Mold_19.jpg" alt="Image">
+            <img src="/images/Mold/Mold_20.jpg" alt="Image">
+        </div>
+        <p>
+            Here you can see how the mold looked in its underside (where the mold actually takes place). I removed the 3D-printed shuriken because that was no longer needed.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_21.jpg" alt="Image">
+            <img src="/images/Mold/Mold_22.jpg" alt="Image">
+        </div>
+        <p>
+            I then poored resin into the mold. I poured just enough resin so that it overflowed a little, which is what we were supposed to do.
+            The process worked similarly to the silicone, with two parts that had to be mixed together. The second image shows the two containers and the measurement cup after all the necessary resin was already poured from it.
+            Again, now I just had to wiat for it to dry and harden.
+        </p>
+        <br> <br> <br> <br>
+
+        <!-- Layout 4: Three images side by side --> 
+        <div class="layout-4">
+            <img src="/images/Mold/Mold_24.jpg" alt="Image">
+            <img src="/images/Mold/Mold_23.jpg" alt="Image">
+            <img src="/images/Mold/Mold_25.jpg" alt="Image">
+        </div>
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_26.jpg" alt="Image">
+            <img src="/images/Mold/Mold_27.jpg" alt="Image">
+        </div>
+        <p>
+            When it was ready I carefully pulled out the cast. Above I show how the resin cast first looked like when removed from the mold.
+        </p>
+        <br> <br> <br> <br>
+        
+        <!-- Layout 2: Two images side by side with full-width text -->
+        <div class="layout-3">
+            <img src="/images/Mold/Mold_28.jpg" alt="Image">
+            <img src="/images/Mold/Mold_29.jpg" alt="Image">
+        </div>
+        <p>
+            The cast had a few areas of extra hardened resin, so I took the time to remove as much of those areas as I could with a combination of scissors and a box-cutter to make the cast look as nice as possible. The last image shows a comparison of the original 3D-printed object next to the resin cast.
+        </p>
+        <br> <br> <br> <br>
+    </div>
+</body>
+</html>
